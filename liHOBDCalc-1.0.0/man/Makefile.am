@@ -1,0 +1,37 @@
+man3_MANS = binaddbin.gz                 \
+            bindivbin.gz                 \
+            binfloataddbinfloat.gz       \
+            binfloatdivbinfloat.gz       \
+            binfloatmultbinfloat.gz      \
+            binfloatsubbinfloat.gz       \
+            binfloattofloat.gz           \
+            binmultbin.gz                \
+            binsubbin.gz                 \
+            bintoint.gz                  \
+            floattobinfloat.gz           \
+            floattohexfloat.gz           \
+            floattooctfloat.gz           \
+            hexaddhex.gz                 \
+            hexdivhex.gz                 \
+            hexfloataddhexfloat.gz       \
+            hexfloatdivhexfloat.gz       \
+            hexfloatmulthexfloat.gz      \
+            hexfloatsubhexfloat.gz       \
+            hexfloattofloat.gz           \
+            hexmulthex.gz                \
+            hexsubhex.gz                 \
+            hextoint.gz                  \
+            hobdcalc.gz                  \
+            inttobin.gz                  \
+            inttohex.gz                  \
+            inttooct.gz                  \
+            octaddoct.gz                 \
+            octdivoct.gz                 \
+            octfloataddoctfloat.gz       \
+            octfloatdivoctfloat.gz       \
+            octfloatmultoctfloat.gz      \
+            octfloatsuboctfloat.gz       \
+            octfloattofloat.gz           \
+            octmultoct.gz                \
+            octsuboct.gz                 \
+            octtoint.gz                  

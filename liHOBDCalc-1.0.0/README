@@ -1,0 +1,84 @@
+hobdcalc (hexadecimal, Octal, Binary, Decimal calculator) library.
+
+for installation simply type:
+
+  $ ./configure          # This will perform a system check and set some variables.
+  $ make                 # This will build the shared and the static library
+  $ sudo make install    # This will install libHOBDCalc on your system.
+                         # As shared and static library and the manpages.
+
+For linking use:
+
+  $ cc main.c -lHOBDCalc
+
+
+
+Read the manpages available at section 3 for usage of libHOBDCalc:
+
+  $ man binaddbin
+  $ man bindivbin
+  $ man binfloataddbinfloat
+  $ man binfloatdivbinfloat
+  $ man binfloatmultbinfloat
+  $ man binfloatsubbinfloat
+  $ man binfloattofloat
+  $ man binmultbin
+  $ man binsubbin
+  $ man bintoint
+  $ man floattobinfloat
+  $ man floattohexfloat
+  $ man floattooctfloat
+  $ man hexaddhex
+  $ man hexdivhex
+  $ man hexfloataddhexfloat
+  $ man hexfloatdivhexfloat
+  $ man hexfloatmulthexfloat
+  $ man hexfloatsubhexfloat
+  $ man hexfloattofloat
+  $ man hexmulthex
+  $ man hexsubhex
+  $ man hextoint
+  $ man hobdcalc
+  $ man inttobin
+  $ man inttohex
+  $ man inttooct
+  $ man octaddoct
+  $ man octdivoct
+  $ man octfloataddoctfloat
+  $ man octfloatdivoctfloat
+  $ man octfloatmultoctfloat
+  $ man octfloatsuboctfloat
+  $ man octfloattofloat
+  $ man octmultoct
+  $ man octsuboct
+  $ man octtoint 
+
+Credits:
+
+  Thank's to my beloved mother, my family and the doctors.
+  Stay away from drugs: drugs destroy your brain and life. 
+
+License
+                                                                                       
+ libHOBDCalc is a little multibases converting and calculation
+ facilities library.
+                                         
+ libHOBDCalc (C) 2014 Brüggemann Eddie (Alias mrcyberfighter).                         
+                                                                                
+ This file is part of libHOBDCalc.                                 
+ libHOBDCalc is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by           
+ the Free Software Foundation, either version 3 of the License, or              
+ (at your option) any later version.                                            
+                                                                                
+ libHOBDCalc is distributed in the hope that it will be useful,      
+ but WITHOUT ANY WARRANTY; without even the implied warranty of                  
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                   
+ GNU General Public License for more details.                                   
+                                                                                
+ You should have received a copy of the GNU General Public License              
+ along with libHOBDCalc. If not, see <http://www.gnu.org/licenses/>
+                                                                                
+
+
+Copyright (C) GPLv3 2014 Brüggemann Eddie <mrcyberfighter@gmail.com>.
