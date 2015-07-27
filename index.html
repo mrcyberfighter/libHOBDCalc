@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Libhobdcalc by mrcyberfighter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Libhobdcalc</h1>
+      <h2 class="project-tagline">libHOBDCalc is a C library for multibase (bases: 2,8,10,16) conversion and calculating. With signed integers and floats converting, adding, substract, multiplying and dividing functions.</h2>
+      <a href="https://github.com/mrcyberfighter/libHOBDCalc" class="btn">View on GitHub</a>
+      <a href="https://github.com/mrcyberfighter/libHOBDCalc/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/mrcyberfighter/libHOBDCalc/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="hobdcalc-hexadecimal-octal-binary-decimal-calculator-library" class="anchor" href="#hobdcalc-hexadecimal-octal-binary-decimal-calculator-library" aria-hidden="true"><span class="octicon octicon-link"></span></a>HOBDCalc (Hexadecimal, Octal, Binary, Decimal Calculator) library.</h1>
+
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description</h2>
+
+<p><strong>HOBDCalc</strong> is an little library for converting decimal values (<em>signed</em> <em>integers</em> or <em>floating-point</em> values) in an string representing the value in following bases. </p>
+
+<ul>
+<li><p><strong>Binary</strong> base (2). </p></li>
+<li><p><strong>Octal</strong> base (8).</p></li>
+<li><p><strong>Hexadecimal</strong> base (16).</p></li>
+</ul>
+
+<p>The values are converting in an string in the wanted base.</p>
+
+<p>And <strong>HOBDCalc</strong> provide the back conversion functions: </p>
+
+<p>from an string in base 2, 8 or 16 to the corresponding value in decimal base.</p>
+
+<p>That's not all because HOBDCalc implement the basic operations to apply on the strings in the supported base.</p>
+
+<ul>
+<li><p><strong>Addition</strong> from 2 strings in base 2, 8 or 16.</p></li>
+<li><p><strong>Substraction</strong> from 2 strings in base 2, 8 or 16.</p></li>
+<li><p><strong>Multiplication</strong> from  2 strings in base 2, 8 or 16.</p></li>
+<li><p><strong>Division</strong> from 2 strings in base 2, 8 or 16.</p></li>
+</ul>
+
+<p>Either as <em>integer</em> values or as <em>floating-point</em> values.</p>
+
+<h2>
+<a id="functions-listing" class="anchor" href="#functions-listing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions listing</h2>
+
+<blockquote>
+<p>char *inttobin(long long value, char *buffer) ; </p>
+
+<p>char *inttooct(long long value, char *buffer) ; </p>
+
+<p>char *inttohex(long long value, char *buffer) ; </p>
+
+<p>long long bintoint(const char *string)  ; </p>
+
+<p>long long octtoint(const char *string)  ; </p>
+
+<p>long long hextoint(const char *string)  ; </p>
+
+<p>char *floattobinfloat(long double value, char *buffer)  ; </p>
+
+<p>char *floattooctfloat(long double value, char *buffer)  ; </p>
+
+<p>char *floattohexfloat(long double value, char *buffer)  ; </p>
+
+<p>long double binfloattofloat(const char *float_string)  ; </p>
+
+<p>long double octfloattofloat(const char *float_string)  ; </p>
+
+<p>long double octfloattofloat(const char *float_string)  ; </p>
+
+<p>long long binaddbin(const char *bin_str_1, const char *bin_str_2)   ;</p>
+
+<p>long long binsubbin(const char *bin_str_1, const char *bin_str_2)   ;</p>
+
+<p>long long binmultbin(const char *bin_str_1, const char *bin_str_2)  ;</p>
+
+<p>long double bindivbin(const char *bin_str_1, const char *bin_str_2) ;</p>
+
+<p>long long octaddoct(const char *oct_str_1, const char *oct_str_2)   ;</p>
+
+<p>long long octsuboct(const char *oct_str_1, const char *oct_str_2)   ;</p>
+
+<p>long long octmultoct(const char *oct_str_1, const char *oct_str_2)  ;</p>
+
+<p>long double octdivoct(const char *oct_str_1, const char *oct_str_2) ;</p>
+
+<p>long long hexaddhex(const char *hex_str_1, const char *hex_str_2)   ;</p>
+
+<p>long long hexsubhex(const char *hex_str_1, const char *hex_str_2)   ;</p>
+
+<p>long long hexmulthex(const char *hex_str_1, const char *hex_str_2)  ;</p>
+
+<p>long double hexdivhex(const char *hex_str_1, const char *hex_str_2) ;</p>
+
+<p>long double binfloataddbinfloat(const char *bin_float_str_1, const char *bin_float_str_2)   ;</p>
+
+<p>long double binfloatsubbinfloat(const char *bin_float_str_1, const char *bin_float_str_2)   ;</p>
+
+<p>long double binfloatmultbinfloat(const char *bin_float_str_1, const char *bin_float_str_2)  ;</p>
+
+<p>long double binfloatdivbinfloat(const char *bin_float_str_1, const char *bin_float_str_2)   ;</p>
+
+<p>long double octfloataddoctfloat(const char *oct_float_str_1, const char *oct_float_str_2)   ;</p>
+
+<p>long double octfloatsuboctfloat(const char *oct_float_str_1, const char *oct_float_str_2)   ;</p>
+
+<p>long double octfloatmultoctfloat(const char *oct_float_str_1, const char *oct_float_str_2)  ;</p>
+
+<p>long double octfloatdivoctfloat(const char *oct_float_str_1, const char *oct_float_str_2)   ;</p>
+
+<p>long double hexfloataddhexfloat(const char *hex_float_str_1, const char *hex_float_str_2)   ;</p>
+
+<p>long double hexfloatsubhexfloat(const char *hex_float_str_1, const char *hex_float_str_2)   ;</p>
+
+<p>long double hexfloatmulthexfloat(const char *hex_float_str_1, const char *hex_float_str_2)  ;</p>
+
+<p>long double hexfloatdivhexfloat(const char *hex_float_str_1, const char *hex_float_str_2)   ;</p>
+</blockquote>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<blockquote>
+<pre><code>$ ./configure          # This will perform a system check and set some variables.
+
+$ make                 # This will build the shared and the static library.
+
+$ sudo make install    # This will install libHOBDCalc on your system, As shared and static library and the manpages.
+</code></pre>
+</blockquote>
+
+<h2>
+<a id="development-with-hobdcalc" class="anchor" href="#development-with-hobdcalc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Development with HOBDCalc</h2>
+
+<p>By compilation of your program simply link the <strong>HOBDCalc</strong> library.</p>
+
+<blockquote>
+<pre><code>$ cc main.c -lHOBDCalc
+</code></pre>
+</blockquote>
+
+<p>If this fail try to link <em>first</em> the <strong>HOBDCalc</strong> library and <em>after</em> the <strong>math</strong> library.       </p>
+
+<blockquote>
+<pre><code>$ cc main.c -HOBDCalc -lm   # In that order.    
+</code></pre>
+</blockquote>
+
+<h2>
+<a id="usage-advice-of-libhobdcalc" class="anchor" href="#usage-advice-of-libhobdcalc" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage advice of libHOBDCalc:</h2>
+
+<p>For the base conversions for floating-points values use the <strong>double</strong> type instead of the <strong>long double</strong> type by usage of a cast.</p>
+
+<p>Because libHOBDCalc compute internally with the type <strong>long double</strong> type but if you want an fully exact returned value use a cast to  the <strong>double</strong> type. </p>
+
+<p>like in the provide assertions file of the library: <strong>hobdcalc_assertions.c</strong> which demonstrate the exactitude of <strong>libHOBDCalc</strong> with an correct usage and to put <strong>libHOBDCalc</strong> to the proof.    </p>
+
+<h2>
+<a id="note-for-developpers" class="anchor" href="#note-for-developpers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Note for developpers:</h2>
+
+<p>I failed to implement the under|over flow detection by operations functions who deal with the type <strong>long double</strong>.</p>
+
+<p>If you know how to detect so an under|over flow thank's to contact me at: <a href="mailto:mrcyberfighter@gmail.com">mrcyberfighter@gmail.com</a>.</p>
+
+<h1>
+<a id="mapages" class="anchor" href="#mapages" aria-hidden="true"><span class="octicon octicon-link"></span></a>mapages:</h1>
+
+<p>Read the manpages available at section 3 for usage of libHOBDCalc:</p>
+
+<ul>
+<li><p>$ man binaddbin</p></li>
+<li><p>$ man bindivbin</p></li>
+<li><p>$ man binfloataddbinfloat</p></li>
+<li><p>$ man binfloatdivbinfloat</p></li>
+<li><p>$ man binfloatmultbinfloat</p></li>
+<li><p>$ man binfloatsubbinfloat</p></li>
+<li><p>$ man binfloattofloat</p></li>
+<li><p>$ man binmultbin</p></li>
+<li><p>$ man binsubbin</p></li>
+<li><p>$ man bintoint</p></li>
+<li><p>$ man floattobinfloat</p></li>
+<li><p>$ man floattohexfloat</p></li>
+<li><p>$ man floattooctfloat</p></li>
+<li><p>$ man hexaddhex</p></li>
+<li><p>$ man hexdivhex</p></li>
+<li><p>$ man hexfloataddhexfloat</p></li>
+<li><p>$ man hexfloatdivhexfloat</p></li>
+<li><p>$ man hexfloatmulthexfloat</p></li>
+<li><p>$ man hexfloatsubhexfloat</p></li>
+<li><p>$ man hexfloattofloat</p></li>
+<li><p>$ man hexmulthex</p></li>
+<li><p>$ man hexsubhex</p></li>
+<li><p>$ man hextoint</p></li>
+<li><p>$ man hobdcalc</p></li>
+<li><p>$ man inttobin</p></li>
+<li><p>$ man inttohex</p></li>
+<li><p>$ man inttooct</p></li>
+<li><p>$ man octaddoct</p></li>
+<li><p>$ man octdivoct</p></li>
+<li><p>$ man octfloataddoctfloat</p></li>
+<li><p>$ man octfloatdivoctfloat</p></li>
+<li><p>$ man octfloatmultoctfloat</p></li>
+<li><p>$ man octfloatsuboctfloat</p></li>
+<li><p>$ man octfloattofloat</p></li>
+<li><p>$ man octmultoct</p></li>
+<li><p>$ man octsuboct</p></li>
+<li><p>$ man octtoint </p></li>
+</ul>
+
+<h2>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits:</h2>
+
+<p>Thank's to my beloved mother, my family and the doctors.</p>
+
+<p>Stay away from drugs: drugs destroy your brain and life. </p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><strong>libHOBDCalc</strong> is a little multibases converting and calculation</p>
+
+<p>facilities library.</p>
+
+<p><strong>libHOBDCalc</strong> (C) 2014 Brüggemann Eddie (Alias mrcyberfighter).                         </p>
+
+<p>This file is part of libHOBDCalc.                                 </p>
+
+<p><strong>libHOBDCalc</strong> is free software: you can redistribute it and/or modify</p>
+
+<p>it under the terms of the GNU General Public License as published by           </p>
+
+<p>the Free Software Foundation, either version 3 of the License, or              </p>
+
+<p>(at your option) any later version.                                            </p>
+
+<p><strong>libHOBDCalc</strong> is distributed in the hope that it will be useful,      </p>
+
+<p>but WITHOUT ANY WARRANTY; without even the implied warranty of                  </p>
+
+<p>MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the                   </p>
+
+<p>GNU General Public License for more details.                                   </p>
+
+<p>You should have received a copy of the GNU General Public License              </p>
+
+<p>along with libHOBDCalc. If not, see <a href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a></p>
+
+<p>Copyright (C) GPLv3 2014 Brüggemann Eddie <a href="mailto:mrcyberfighter@gmail.com">mrcyberfighter@gmail.com</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/mrcyberfighter/libHOBDCalc">Libhobdcalc</a> is maintained by <a href="https://github.com/mrcyberfighter">mrcyberfighter</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
+
